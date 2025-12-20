@@ -1,0 +1,44 @@
+VERCION DEL PROBLEMA CON RECURSIVIDAD Y MEMO
+DATOS:  
+
+    DATOS DE ENTRADA:
+
+        NxN = tablero
+
+        M = Cantidad de caballos que puede tener en el tablero
+
+
+    DATOS DE SALIDA:
+        minima cantidad de movimientos para que todos los caballos se encuentren en una casilla si no se puede imprime -1
+
+
+    INFORMACION IMPORTANTE:
+        1.  Si 1 solo caballo esta en diferente color de casilla que otros ya el problema no se puede resolver por consecuente imprimir -1
+
+
+PROBLEMA:
+    Escribir la minima cantidad de movimientos para que todos los caballos se encuentren en una casilla si no se puede imprime -1
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+COMO SAVER SI LA CASILLA ES NEGRA O BLANCA 
+
+Condiciones para que sea negra :
+x y y son numeros pares, x y y son numeros impares 
+
+Condiciones para que sea blanca :
+un numero es par y el otro es impar (x o y)
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+COMO SAVER EN CUANTOS MOVIMINTOS MINIMO TARDA EN LLEGAR EL CABALLO A UNA CASILLA
+
+Con recursividad haces todos los movimientos posibles. En el tablero, si el valor es menor, lo actualizas
+si es mayor retrocedes
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+COMO SAVER CUANTO ES EL MINIMO DE MOVIMIENTOS PARA QUE UN CABALLO LLEGUE A UNA CASILLA
+
+es el minimo numero del tablero principal que cuenta con los numeros max de todos los caballos que 
+pasaron por esas casillas 
