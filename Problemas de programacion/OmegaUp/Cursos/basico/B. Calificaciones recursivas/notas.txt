@@ -1,0 +1,42 @@
+notas
+---------------------------------------
+forma de resolverlo sin recursividad 
+---------------------------------------
+
+
+
+guardar el ultimo () y restarle los numeros del actual () para optener la posicion de los numeros a hacer 
+
+
+(775(9(1111)999)7)
+
+posiciones (comienso desde 1 siendo 1 '('            )       )
+
+1 y 18
+5 y 16
+7 y 12
+
+restamos 12 - 7 y nos da 5 y este se lo restamos al lado izq 
+
+1 t 13
+5 y 11
+
+(775(91999)7)
+
+11-5
+
+restamos 11 - 5 y nos da 6 y este se lo restamos al lado izq 
+
+1 t 7
+(77577)
+
+como ya es el ultimo solo sacamos el resultado   
+1
+
+
+--------------------------------------
+forma de resolverlo con recusrividad 
+--------------------------------------
+
+usamos recursividad y pasamos la posicion como parametro &posicion por que la usaremos mientras lemos el string 
+la recursividad nos servira pra dependiendo si usa (   )  hacer cosas distintas recordatorio de pasar el string como & sino se pasara una copia y eso nos dara mucho tiempo
